@@ -1,0 +1,33 @@
+.logo
+    width: 60%
+
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    nav
+        width: 30% 
+        ul
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: center
+            li
+                padding: .5em
+                a
+                    color: $color-secundario
+                    &:visited
+                        color: $color-secundario
+
+.active
+    background: $color-secundario
+    +border-radius(.5em)
+    &:hover
+        background: rgba($color-secundario, .8)
+        cursor: pointer
+    a
+        color: $color-primario
+        &:visited
+            color: $color-primario
